@@ -1,17 +1,18 @@
 // TODO: Include packages needed for this application
 const fs = require("fs");
+const generateReadme = require('./dist/generateMarkdown');
 const inquirer = require("inquirer");
 // TODO: Create an array of questions for user input
 const questions = [
         {
             type: "input",
             name: "title",
-            message: "What is the name of your project? (Required)"
+            message: "What is the name of your project?"
         },
         {
             type: "input",
             name: "description",
-            message: "Provide a description of the project (Required)"
+            message: "Provide a description of the project"
         },
         {
             type: 'checkbox',
@@ -27,7 +28,8 @@ const questions = [
           {
             type: "input",
             name: "link",
-            message: "Please enter link for deployed application"
+            message: "Please enter link for deployed application",
+            when: ({ confirmLink }) => confirmLink
           },
         {
             type: "input",
@@ -42,7 +44,8 @@ const questions = [
         {
             type: "confirm",
             name: "confirmCredits",
-            message: "Would you like to list anyone in the 'Credits' section?"
+            message: "Would you like to list anyone in the 'Credits' section?",
+            when: ({ confirmCredits }) => confirmCredits
           },
           {
             type: "input",
@@ -65,6 +68,10 @@ const questions = [
         },
     ];
 
+    const promptUser = () => {
+      return inquirer.prompt(questions);
+    }
+    
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) { fs.writeFile(filename, data, (err)=> {
   if (err) {
@@ -76,12 +83,20 @@ function writeToFile(fileName, data) { fs.writeFile(filename, data, (err)=> {
  
 
 // TODO: Create a function to initialize app
-function init() { 
-  inquirer.prompt(questions).then((answers) => {
-  const response = generatedMarkdown(answers);
-  console.log(answers);
-  writeToFile("ReadMe.md", response);
-})
+function init() {
+  promptUser()
+      .then(questions => {
+          return generateReadme(questions);
+      })
+      .then(formattedPage => {
+          return writeToFile(formattedPage);
+      })
+      .then(writeFileResponse => {
+          console.log(writeFileResponse);
+      })
+      .catch(err => {
+          console.log(err);
+      })
 }
 
 // Function call to initialize app
