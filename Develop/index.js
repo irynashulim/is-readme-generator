@@ -2,33 +2,16 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
 // TODO: Create an array of questions for user input
-const questions = () => {
-    return inquirer.prompt([
+const questions = [
         {
             type: "input",
             name: "title",
-            message: "What is the name of your project? (Required)",
-            validate: nameInput => {
-                if (nameInput) {
-                  return true;
-                } else {
-                  console.log("You need to enter a project name!");
-                  return false;
-                }
-              }
+            message: "What is the name of your project? (Required)"
         },
         {
             type: "input",
             name: "description",
-            message: "Provide a description of the project (Required)",
-            validate: descriptionInput => {
-                if (descriptionInput) {
-                  return true;
-                } else {
-                  console.log("You need to enter a project description!");
-                  return false;
-                }
-              }
+            message: "Provide a description of the project (Required)"
         },
         {
             type: 'checkbox',
@@ -39,19 +22,17 @@ const questions = () => {
         {
             type: "confirm",
             name: "confirmLink",
-            message: "Would you like to add a link for deployed application?",
-            default: true
+            message: "Would you like to add a link for deployed application?"
           },
           {
             type: "input",
             name: "link",
-            message: "Please enter link for deployed application",
-            when: ({ confirmLink }) => confirmLink
+            message: "Please enter link for deployed application"
           },
         {
             type: "input",
             name: "installation",
-            message: "Describe the installation process please", 
+            message: "Describe the installation process please"
         },
         {
             type: "input",
@@ -61,14 +42,12 @@ const questions = () => {
         {
             type: "confirm",
             name: "confirmCredits",
-            message: "Would you like to list anyone in the 'Credits' section?",
-            default: true
+            message: "Would you like to list anyone in the 'Credits' section?"
           },
           {
             type: "input",
             name: "credits",
-            message: "Please add the names to the 'Credits' section",
-            when: ({ confirmCredits }) => confirmCredits
+            message: "Please add the names to the 'Credits' section"
           },
           {
             type: "list",
@@ -84,10 +63,11 @@ const questions = () => {
                 "Open"
             ]
         },
-    ]);
+    ];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}
+ 
 
 // TODO: Create a function to initialize app
 function init() {}
