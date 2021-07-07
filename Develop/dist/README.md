@@ -1,17 +1,17 @@
-# Ira
+# ReadMe Generator
 
-  [![License](https://img.shields.io/badge/license-GNU-orange)](https://opensource.org/licenses)
+  ![GitHub license](https://img.shields.io/badge/license-APACHE 2.0-blue.svg)
   ---
   ##  Description
-    hjfgkfghk
+    to help you create a professional README for a new project
 
   ---
     Built with:
-    JavaScript,HTML,CSS
+    JavaScript,Node
     
   
   ---
-    Live link: (fghfgjncgh)
+    Live link: readme.generator.com
 
 
 ---
@@ -21,37 +21,40 @@
   * [Credits](#credits)
   * [Contribute](#contribute)
   * [Test](#test)
-  * [License](#license)
+  
+* [License](#license)
+
   * [Questions](#questions)
   
 ---
   # Installation
-  hkmf
+  download from my github repository, install node package and inquere package
 
 ---
   ## Usage
-  fghkmf
+  ones all required pacages installed, type node index.js in the terminal to start questions, answer all the qestons to created READ.ME file
 
 ---
   ## Credits
-  xgfnhc dfghnjd 
+  TAs from UT bootcamp helped me with license functions
 
 ---
   ## Contribute
-  hfmkfhvj
+  no contributions allowed
 
 ---
   ## Test
-  ghjmcg
+  Test 1
   
 ---
-  ## License
-  GNU
+## License
+This project is licensed under the APACHE 2.0 license.
 
 ---
+ 
 ## Questions?
   If you have any question or require any further information, feel free to contact me. 
   
-  [GitHub u/](https://github.com/hcgkm)
+  [GitHub page](https://github.com/irynashulim)
 
-hkmc
+iryna.shulim@gmail.com

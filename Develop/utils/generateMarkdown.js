@@ -1,15 +1,16 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) { 
+function renderLicenseBadge(license) {
   if (license !== "None") {
-    return `![GitHub license](https://img.shields.io/badge/license-${license}-orange.svg)`;
+    return `![GitHub license](https://img.shields.io/badge/license-${license}-blue.svg)`;
   }
   return '';
 }
 
+
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) { 
+function renderLicenseLink(license) {
   if (license !== "None") {
     return `\n* [License](#license)\n`;
   }
@@ -30,7 +31,7 @@ This project is licensed under the ${license} license.`;
 function generateMarkdown(data) {
   return `# ${data.title}
 
-  [![License](https://img.shields.io/badge/license-${data.license}-orange)](https://opensource.org/licenses)
+  ${renderLicenseBadge(data.license)}
   ---
   ##  Description
     ${data.description}
@@ -51,7 +52,7 @@ function generateMarkdown(data) {
   * [Credits](#credits)
   * [Contribute](#contribute)
   * [Test](#test)
-  * [License](#license)
+  ${renderLicenseLink(data.license)}
   * [Questions](#questions)
   
 ---
@@ -75,14 +76,14 @@ function generateMarkdown(data) {
   ${data.test}
   
 ---
-  ## License
-  ${data.license}
+${renderLicenseSection(data.license)}
 
 ---
+ 
 ## Questions?
   If you have any question or require any further information, feel free to contact me. 
   
-  [GitHub u/](https://github.com/${data.github})
+  [GitHub page](https://github.com/${data.github})
 
 ${data.email}
 `;
