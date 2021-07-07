@@ -68,7 +68,7 @@ const questions = [
                 "ISC",
                 "MIT",
                 "Mozilla",
-                "Open"
+                "None"
             ]
         },
         {
