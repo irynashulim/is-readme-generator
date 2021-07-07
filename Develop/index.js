@@ -20,11 +20,6 @@ const questions = [
             message: 'What did you build this project with? (Check all that apply)',
             choices: ['JavaScript', 'HTML', 'CSS', 'ES6', 'jQuery', 'Bootstrap', 'Node']
           },
-          {
-            type: 'input',
-            name: 'badge',
-            message: 'Add A badge link to your selected License.',
-        },
         {
             type: "confirm",
             name: "confirmLink",
@@ -83,7 +78,7 @@ const questions = [
       },
       {
         type: "input",
-        name: "GitHub",
+        name: "github",
         message: "Enter is your GitHub username?",
     },
     {

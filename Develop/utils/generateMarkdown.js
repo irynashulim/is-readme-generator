@@ -19,18 +19,17 @@ function generateMarkdown(data) {
   ##  Description
     ${data.description}
     
-    ####Built with:
+    ### Built with:
     ${data.languages}
     
-    [Live link]
-    ${data.link}
+    Live link: ${data.link}
 
 
 ---
   ## Table of Contents
   * [Installation](#installation)
   * [Usage](#usage)
-  * [Credits](#credit)
+  * [Credits](#credits)
   * [Contribute](#contribute)
   * [Test](#test)
   * [License](#license)
@@ -49,7 +48,7 @@ function generateMarkdown(data) {
   ${data.credits}
 
 ---
-  ##Contribute
+  ## Contribute
   ${data.contribute}
 
 ---
@@ -64,7 +63,7 @@ function generateMarkdown(data) {
 ## Questions?
   If you have any question or require any further information, feel free to contact me. 
   
-  [GitHub u/${data.github}](https://github.com/${data.github})
+  [GitHub u/](https://github.com/${data.github})
 
 ${data.email}
 `;
