@@ -18,10 +18,13 @@ function generateMarkdown(data) {
   ---
   ##  Description
     ${data.description}
-    
-    ### Built with:
+
+  ---
+    Built with:
     ${data.languages}
     
+  
+  ---
     Live link: ${data.link}
 
 
