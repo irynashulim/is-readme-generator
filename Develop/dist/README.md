@@ -1,15 +1,15 @@
-# j
+# One
 
-  y
+  [![License](https://img.shields.io/badge/license-GNU-orange)](https://opensource.org/licenses)
   ---
   ##  Description
-    hhk
+    cfvbxfgn
     
     ####Built with:
-    JavaScript,CSS,ES6,Bootstrap
+    JavaScript,HTML,CSS,ES6,jQuery,Bootstrap
     
     [Live link]
-    bknl
+    gh,j
 
 
 ---
@@ -17,23 +17,28 @@
   * [Installation](#installation)
   * [Usage](#usage)
   * [Credits](#credit)
+  * [Contribute](#contribute)
   * [License](#license)
   
 ---
   # Installation
-  hnlkn
+  jhmkf
 
 ---
   ## Usage
-  lnlkn
+  gj,
 
 ---
   ## Credits
-  ,kn.n.khgyv,kj
+  Iryna Shulim
+
+---
+  ##Contribute
+  jhmf,hfv
 
 ---
   ## Test:
-  hkhl
+  gyuj,fvh.igv
   
 ---
   ## License
@@ -42,5 +47,6 @@
 ---
 ## Questions?
   If you have any question or require any further information, feel free to contact me. 
-  GitHub: yf,kjb.k
-  Email: b,kj.lk
+  
+  [GitHub u/undefined](https://github.com/undefined)
+gj,k.

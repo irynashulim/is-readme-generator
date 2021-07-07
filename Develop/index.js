@@ -58,6 +58,11 @@ const questions = [
             when: ({ confirmCredits }) => confirmCredits
           },
           {
+            type: "input",
+            message: "Contribution Guidelines:",
+            name: "contribute",
+        },
+          {
             type: "list",
             name: "license",
             message: "Choose the license for this project? ",

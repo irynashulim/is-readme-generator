@@ -14,7 +14,7 @@ function renderLicenseSection(license) { }
 function generateMarkdown(data) {
   return `# ${data.title}
 
-  ${data.badge}
+  [![License](https://img.shields.io/badge/license-${data.license}-orange)](https://opensource.org/licenses)
   ---
   ##  Description
     ${data.description}
@@ -31,7 +31,10 @@ function generateMarkdown(data) {
   * [Installation](#installation)
   * [Usage](#usage)
   * [Credits](#credit)
+  * [Contribute](#contribute)
+  * [Test](#test)
   * [License](#license)
+  * [Questions](#questions)
   
 ---
   # Installation
@@ -46,7 +49,11 @@ function generateMarkdown(data) {
   ${data.credits}
 
 ---
-  ## Test:
+  ##Contribute
+  ${data.contribute}
+
+---
+  ## Test
   ${data.test}
   
 ---
@@ -56,8 +63,10 @@ function generateMarkdown(data) {
 ---
 ## Questions?
   If you have any question or require any further information, feel free to contact me. 
-  GitHub: ${data.GitHub}
-  Email: ${data.email}
+  
+  [GitHub u/${data.github}](https://github.com/${data.github})
+
+${data.email}
 `;
 }
 
