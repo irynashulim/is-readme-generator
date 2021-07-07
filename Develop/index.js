@@ -20,6 +20,11 @@ const questions = [
             message: 'What did you build this project with? (Check all that apply)',
             choices: ['JavaScript', 'HTML', 'CSS', 'ES6', 'jQuery', 'Bootstrap', 'Node']
           },
+          {
+            type: 'input',
+            name: 'badge',
+            message: 'Add A badge link to your selected License.',
+        },
         {
             type: "confirm",
             name: "confirmLink",
@@ -45,12 +50,12 @@ const questions = [
             type: "confirm",
             name: "confirmCredits",
             message: "Would you like to list anyone in the 'Credits' section?",
-            when: ({ confirmCredits }) => confirmCredits
           },
           {
             type: "input",
             name: "credits",
-            message: "Please add the names to the 'Credits' section"
+            message: "Please add the names to the 'Credits' section",
+            when: ({ confirmCredits }) => confirmCredits
           },
           {
             type: "list",
@@ -66,6 +71,21 @@ const questions = [
                 "Open"
             ]
         },
+        {
+          type: "input",
+          name: "test",
+          message: "Write tests for your application.",
+      },
+      {
+        type: "input",
+        name: "GitHub",
+        message: "Enter is your GitHub username?",
+    },
+    {
+        type: "input",
+        name: "email",
+        message: "What is your Email address?",
+    },
     ];
 
     const promptUser = () => {

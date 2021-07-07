@@ -14,11 +14,12 @@ function renderLicenseSection(license) { }
 function generateMarkdown(data) {
   return `# ${data.title}
 
+  ${data.badge}
   ---
   ##  Description
     ${data.description}
     
-    **Built with:**
+    ####Built with:
     ${data.languages}
     
     [Live link]
@@ -40,12 +41,23 @@ function generateMarkdown(data) {
   ## Usage
   ${data.usage}
 
+---
   ## Credits
   ${data.credits}
 
-  ---
+---
+  ## Test:
+  ${data.test}
+  
+---
   ## License
   ${data.license}
+
+---
+## Questions?
+  If you have any question or require any further information, feel free to contact me. 
+  GitHub: ${data.GitHub}
+  Email: ${data.email}
 `;
 }
 
