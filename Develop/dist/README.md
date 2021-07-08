@@ -3,7 +3,7 @@
   ![GitHub license](https://img.shields.io/badge/license-APACHE 2.0-blue.svg)
   ---
   ##  Description
-    to help you create a professional README for a new project
+    This application can build proffecional ReadMe within few clicks.
 
   ---
     Built with:
@@ -11,7 +11,7 @@
     
   
   ---
-    Live link: readme.generator.com
+    Live link: readme.github.com
 
 
 ---
@@ -24,23 +24,22 @@
   
 * [License](#license)
 
-  * [Questions](#questions)
-  
+  * [Questions](#questions) 
 ---
   # Installation
-  download from my github repository, install node package and inquere package
+  Download to you PC by cloning from my GitHub repo
 
 ---
   ## Usage
-  ones all required pacages installed, type node index.js in the terminal to start questions, answer all the qestons to created READ.ME file
+  Ones downloaded instull node and inquirer packeges to use
 
 ---
   ## Credits
-  TAs from UT bootcamp helped me with license functions
+  UT buutcamp TA's help me with this project
 
 ---
   ## Contribute
-  no contributions allowed
+  You can contribute to this project
 
 ---
   ## Test
