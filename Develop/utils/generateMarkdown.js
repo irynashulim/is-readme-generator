@@ -36,14 +36,9 @@ function generateMarkdown(data) {
   ##  Description
     ${data.description}
 
-  ---
+  
     Built with:
     ${data.languages}
-    
-  
-  ---
-    Live link: ${data.link}
-
 
 ---
   ## Table of Contents
@@ -53,7 +48,7 @@ function generateMarkdown(data) {
   * [Contribute](#contribute)
   * [Test](#test)
   ${renderLicenseLink(data.license)}
-  * [Questions](#questions) 
+
 ---
   # Installation
   ${data.installation}

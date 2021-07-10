@@ -1,18 +1,13 @@
 # ReadMe Generator
 
-  ![GitHub license](https://img.shields.io/badge/license-APACHE 2.0-blue.svg)
+  ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
   ---
   ##  Description
-    This application can build proffecional ReadMe within few clicks.
+    test
 
-  ---
+  
     Built with:
     JavaScript,Node
-    
-  
-  ---
-    Live link: readme.github.com
-
 
 ---
   ## Table of Contents
@@ -24,30 +19,30 @@
   
 * [License](#license)
 
-  * [Questions](#questions) 
+
 ---
   # Installation
-  Download to you PC by cloning from my GitHub repo
+  test
 
 ---
   ## Usage
-  Ones downloaded instull node and inquirer packeges to use
+  test
 
 ---
   ## Credits
-  UT buutcamp TA's help me with this project
+  test
 
 ---
   ## Contribute
-  You can contribute to this project
+  test
 
 ---
   ## Test
-  Test 1
+  test
   
 ---
 ## License
-This project is licensed under the APACHE 2.0 license.
+This project is licensed under the MIT license.
 
 ---
  
